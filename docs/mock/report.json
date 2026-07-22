@@ -1,0 +1,77 @@
+{
+  "schemaVersion": "1.0",
+  "meta": {
+    "brand": "拜诺克斯 BioCNex",
+    "brandShort": "BN",
+    "reportNo": "M02MOCK20260722",
+    "reportDate": "2026-07-22",
+    "title": "肠道菌群检测报告（Mock 演示）",
+    "subject": "BioCNex · 肠道菌群检测报告（Mock）"
+  },
+  "pages": [
+    {
+      "id": "cover",
+      "kind": "cover",
+      "blocks": [
+        {
+          "type": "title",
+          "props": {
+            "eyebrow": "拜诺克斯 BioCNex",
+            "title": "肠道菌群检测报告（Mock 演示）",
+            "subtitle": "GUT MICROBIOME EVALUATION REPORT (MOCK)",
+            "level": 1
+          }
+        },
+        {
+          "type": "infoGrid",
+          "props": {
+            "title": "报告信息",
+            "items": [
+              { "label": "送检编号", "value": "M02MOCK20260722" },
+              { "label": "检测方法", "value": "宏基因组测序（Mock）" },
+              { "label": "报告日期", "value": "2026-07-22" },
+              { "label": "报告版本", "value": "V1.0-mock" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "mock-table",
+      "kind": "content",
+      "blocks": [
+        {
+          "type": "title",
+          "props": {
+            "eyebrow": "01 / MOCK",
+            "title": "指标参考范围对比（Mock）",
+            "subtitle": "由 public/mock/report.json 经适配层 normalizeReport 渲染"
+          }
+        },
+        {
+          "type": "table",
+          "props": {
+            "title": "代谢指标（Mock）",
+            "note": "↑ 偏高、↓ 偏低；本页数据来自 mock 接口示例，非真实检测结果。",
+            "columns": [
+              { "key": "name", "label": "指标" },
+              { "key": "value", "label": "检测值", "compare": { "rangeKey": "range" } },
+              { "key": "range", "label": "参考范围" },
+              { "key": "unit", "label": "单位" }
+            ],
+            "rows": [
+              { "name": "丁酸", "value": "3.1", "range": "6.0～12.0", "unit": "μmol/g" },
+              { "name": "乙酸", "value": "60.4", "range": "25～45", "unit": "μmol/g" },
+              { "name": "丙酸", "value": "8.2", "range": "5.0～11.0", "unit": "μmol/g" },
+              { "name": "未检出示例", "value": "未检出", "range": "0.10～0.80", "unit": "μmol/g" }
+            ]
+          }
+        },
+        {
+          "type": "notARealType",
+          "props": { "hint": "未知区块，用于演示降级提示。" }
+        }
+      ]
+    }
+  ]
+}
